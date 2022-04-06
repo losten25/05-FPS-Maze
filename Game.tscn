@@ -40,8 +40,10 @@ material/0 = null
 shape = SubResource( 3 )
 
 [node name="key" parent="Maze" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.859195, -3.44425 )
 
 [node name="Exit" type="Area" parent="Maze"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.963034, -2.00553 )
 script = ExtResource( 3 )
 
 [node name="Light" type="OmniLight" parent="Maze/Exit"]
@@ -75,6 +77,7 @@ current = true
 
 [node name="Menu" type="Control" parent="UI"]
 pause_mode = 2
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 script = ExtResource( 4 )

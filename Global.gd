@@ -12,7 +12,7 @@ func _unhandled_input(_event):
 		if menu != null:
 			if not menu.visible:
 				get_tree().paused = true
-				menu.show
+				menu.show()
 			else: 
 				get_tree().paused = false
-				menu.hide
+				menu.hide()
